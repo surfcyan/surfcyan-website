@@ -1,6 +1,21 @@
-<div style="position: relative; width: 100vw; height: 100vh;">
+<!-- <div style="position: relative; width: 100vw; height: 100vh;" class="parent-element-to-video">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 255, 255, 0.363);">as</div>
-    <video autoplay loop muted style="width: 100%; height: 100%;">
+    <video autoplay loop muted style="width: 100%; height: 100%;" poster="../../assets/homePageImage.jpg">
         <source src="../../assets/homeVideo.mp4"  type="video/mp4">
     </video>
+</div> -->
+
+<div class="parent-element-to-video">
+
+    <div
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 255, 255, 0.363);">
+        as</div>
+    <video playsinline autoplay loop poster="../../assets/homePageImage.jpg" id="vid" muted preload="auto"
+        role="presentation" crossorigin="anonymous"
+        src="https://firebasestorage.googleapis.com/v0/b/surfcyan.appspot.com/o/homePageVideo3.mp4?alt=media&token=11ffed6a-2062-4c2a-9c46-ea8fdc842982"
+        type="video/mp4" type="">
+    </video>
+
+    <!-- <video role="presentation" preload="auto" playsinline="" crossorigin="anonymous" style="position: absolute; top: 0px; opacity: 1; width: 1502px; height: 845px; left: -179px;" loop="" muted="" id="SITE_BACKGROUNDcurrentVideovideo" class="bgVideovideo" width="1502" height="845" autoplay="" src="../../assets/introVdo.mp4"></video> -->
+
 </div>
