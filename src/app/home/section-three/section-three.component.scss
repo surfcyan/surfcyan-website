@@ -1,35 +1,147 @@
-#slider,
-#slider div,
-figure {
+.widtheight {
     width: 100%;
+    height: 80vh;
+    padding: 0 150px;
+}
+.col-flex {
+    display: flex;
+    flex-direction: column;
+}
+.c-buttons {
+    position: absolute;
+    top: 0;
+    z-index: 2;
     height: 100%;
-    transition: 1s;
 }
-#slider {
-    overflow: hidden;
+img{
+    filter: invert(1);
 }
-figure {
-    position: relative;
+h1{
+    color: white;
 }
-.leftBtn {
+
+.website {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    width: fit-content !important;
-    z-index: 4;
+    .col-flex {
+        span {
+            flex: 1;
+        }
+    }
+    img {
+        width: 300px;
+        margin: auto;
+    }
+    h1 {
+        font-size: 7rem;
+    }
 }
-.rightBtn {
+.application {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    width: fit-content !important;
-    z-index: 4;
+    .col-flex {
+        span {
+            flex: 1;
+        }
+    }
+    img {
+        width: 250px;
+        margin: auto;
+    }
+    h1 {
+        font-size: 7rem;
+    }
+}
+.content {
+    display: flex;
+    .col-flex {
+        span {
+            flex: 1;
+        }
+    }
+    img {
+        width: 250px;
+        margin: auto;
+    }
+    h1 {
+        font-size: 7rem;
+    }
+}
+.logo {
+    display: flex;
+    .col-flex {
+        span {
+            flex: 1;
+        }
+    }
+    img {
+        width: 250px;
+        height: 200px;
+        margin: auto;
+    }
+    h1 {
+        font-size: 7rem;
+    }
+}
+
+.youtube {
+    display: flex;
+    .col-flex {
+        span {
+            flex: 1;
+        }
+    }
+    img {
+        width: 250px;
+        margin: auto;
+    }
+    h1 {
+        font-size: 7rem;
+    }
+}
+
+.voice {
+    display: flex;
+    .col-flex {
+        span {
+            flex: 1;
+        }
+    }
+    img {
+        width: 200px;
+        margin: auto;
+    }
+    h1 {
+        font-size: 7rem;
+    }
+}
+
+.ppt {
+    display: flex;
+    .col-flex {
+        span {
+            flex: 1;
+        }
+    }
+    img {
+        width: 350px;
+        margin: auto;
+    }
+    h1 {
+        font-size: 7rem;
+    }
+}
+
+.brand {
+    display: flex;
+    .col-flex {
+        span {
+            flex: 1;
+        }
+    }
+    img {
+        width: 400px;
+        margin: auto;
+    }
+    h1 {
+        font-size: 7rem;
+    }
 }

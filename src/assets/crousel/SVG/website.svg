@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 329.55 302.08">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-2 {
+        fill: #231f20;
+      }
+
+      .cls-3 {
+        fill: #010101;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_4" data-name="Layer 4">
+      <g>
+        <g>
+          <g>
+            <rect class="cls-1" x="2" y="2" width="325.55" height="261.66" rx="9.4"/>
+            <rect class="cls-1" x="12.14" y="12.19" width="305.27" height="226.69" rx="9.4"/>
+          </g>
+          <rect class="cls-2" x="101.8" y="291.68" width="125.95" height="8.4" rx="0.85"/>
+          <rect class="cls-1" x="137.18" y="264.64" width="55.19" height="31.24"/>
+        </g>
+        <line class="cls-1" x1="11.52" y1="36.73" x2="316.79" y2="36.73"/>
+      </g>
+      <g>
+        <path class="cls-3" d="M168,157.74a23.26,23.26,0,1,1,.31,0Zm.31-40.12A17,17,0,1,0,168,151.7h.31a17,17,0,0,0,0-34.08Z"/>
+        <path class="cls-3" d="M114.93,157.74a23,23,0,0,1,0-46H131v6H114.93a17.12,17.12,0,0,0,0,34.23H131v5.74Z"/>
+        <path class="cls-3" d="M251.79,157.74V126.25a8.55,8.55,0,1,0-17.1,0v31.49h-6.05V126.25a8.55,8.55,0,1,0-17.1,0v31.49h-6V126.25A14.53,14.53,0,0,1,220,111.73a15.06,15.06,0,0,1,9.15,3.19l2.42,1.85,2.42-1.85a14.83,14.83,0,0,1,9.15-3.19h.29a14.46,14.46,0,0,1,14.38,14.52v31.49Z"/>
+        <path class="cls-3" d="M74.66,155.89a2.95,2.95,0,1,1,2.94-2.95A2.92,2.92,0,0,1,74.66,155.89Z"/>
+      </g>
+      <g>
+        <rect class="cls-3" x="22.87" y="20.81" width="7.12" height="7.12"/>
+        <rect class="cls-3" x="49.1" y="20.81" width="7.12" height="7.12"/>
+        <rect class="cls-3" x="75.49" y="20.81" width="7.12" height="7.12"/>
+      </g>
+    </g>
+  </g>
+</svg>

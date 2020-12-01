@@ -1,31 +1,149 @@
 <div style="height: 100vh;" class="default-bg">
-    <div style="height: 100%;">
+    <div style="height: fit-content; position: relative;">
 
-        <div id="slider">
-            <figure style="position: relative;">
-                <div style="background-color: red; position: absolute; top: 0;" [ngStyle]="{'left':redPos}" id="red">
-
-                </div>
-                <div style="background-color: green;">
-
-                </div>
-                <div style="background-color: purple; position: absolute; top: 0;" [ngStyle]="{'right':purplePos}" id="purple">
-
-                </div>
-
-                <div class="leftBtn">
+        <owl-carousel-o [options]="customOptions" #owlCar>
+            <!-- carousel -->
+            <ng-template carouselSlide>
+                <div class="widtheight col-flex">
                     <span style="flex: 1;"></span>
-                    <button (click)="left()">Left</button>
+                    <h1 style="font-size: 10rem; text-align: left;">What we do?</h1>
                     <span style="flex: 1;"></span>
                 </div>
-                <div class="rightBtn">
+            </ng-template>
+            <!-- carousel -->
+            <ng-template carouselSlide>
+                <div class="widtheight website">
+                    <!--content here-->
+                    <div class="col-flex">
+                        <span></span>
+                        <h1>Website Creation</h1>
+                        <span></span>
+                    </div>
                     <span style="flex: 1;"></span>
-                    <button (click)="right()">Right</button>
-                    <span style="flex: 1;"></span>
+                    <img src="../../../assets/crousel/SVG/website.svg" alt="">
+                    <!--content here-->
                 </div>
+            </ng-template>
+            <!-- carousel -->
+            <ng-template carouselSlide>
+                <div class="widtheight application">
+                    <!--content here-->
+                    <div class="col-flex">
+                        <span></span>
+                        <h1>Mobile Application</h1>
+                        <span></span>
+                    </div>
+                    <span style="flex: 1;"></span>
+                    <img src="../../../assets/crousel/SVG/application.svg" alt="">
+                    <!--content here-->
+                </div>
+            </ng-template>
+            <!-- carousel -->
+            <ng-template carouselSlide>
+                <div class="widtheight content">
+                    <!--content here-->
+                    <div class="col-flex">
+                        <span></span>
+                        <h1>Content Creation</h1>
+                        <span></span>
+                    </div>
+                    <span style="flex: 1;"></span>
+                    <img src="../../../assets/crousel/SVG/content.svg" alt="">
+                    <!--content here-->
+                </div>
+            </ng-template>
+            <!-- carousel -->
+            <ng-template carouselSlide>
+                <div class="widtheight logo">
+                    <!--content here-->
+                    <div class="col-flex">
+                        <span></span>
+                        <h1>Logo & Graphics</h1>
+                        <span></span>
+                    </div>
+                    <span style="flex: 1;"></span>
+                    <img src="../../../assets/crousel/2x/logo@2x.png" alt="">
+                    <!--content here-->
+                </div>
+            </ng-template>
+            <!-- carousel -->
+            <ng-template carouselSlide>
+                <div class="widtheight youtube">
+                    <!--content here-->
+                    <div class="col-flex">
+                        <span></span>
+                        <h1>Youtube Branding Videos</h1>
+                        <span></span>
+                    </div>
+                    <span style="flex: 1;"></span>
+                    <img src="../../../assets/crousel/SVG/youtube.svg" alt="">
+                    <!--content here-->
+                </div>
+            </ng-template>
+            <!-- carousel -->
+            <!-- carousel -->
+            <ng-template carouselSlide>
+                <div class="widtheight voice">
+                    <!--content here-->
+                    <div class="col-flex">
+                        <span></span>
+                        <h1>Voiceovers</h1>
+                        <span></span>
+                    </div>
+                    <span style="flex: 1;"></span>
+                    <img src="../../../assets/crousel/SVG/voiceover.svg" alt="">
+                    <!--content here-->
+                </div>
+            </ng-template>
+            <!-- carousel -->
+            <!-- carousel -->
+            <ng-template carouselSlide>
+                <div class="widtheight ppt">
+                    <!--content here-->
+                    <div class="col-flex">
+                        <span></span>
+                        <h1>Business Presentations</h1>
+                        <span></span>
+                    </div>
+                    <span style="flex: 1;"></span>
+                    <img src="../../../assets/crousel/SVG/presentation.svg" alt="">
+                    <!--content here-->
+                </div>
+            </ng-template>
+            <!-- carousel -->
+            <!-- carousel -->
+            <ng-template carouselSlide>
+                <div class="widtheight brand">
+                    <!--content here-->
+                    <div class="col-flex">
+                        <span></span>
+                        <h1>Brand Creation</h1>
+                        <span></span>
+                    </div>
+                    <span style="flex: 1;"></span>
+                    <img src="../../../assets/crousel/SVG/brand.svg" alt="">
+                    <!--content here-->
+                </div>
+            </ng-template>
+            <!-- carousel -->
 
-            </figure>
+        </owl-carousel-o>
+
+        <!-- Buttons -->
+        <div class="col-flex c-buttons" style="left: 0;">
+            <span style="flex:1"></span>
+            <span class="material-icons" (click)="owlCar.prev()"
+                style="font-size: 60px; transform: rotate(90deg); color: white;">arrow_circle_down</span>
+            <span style="flex:1"></span>
         </div>
+
+        <div class="col-flex c-buttons" style="right: 0;">
+            <span style="flex:1"></span>
+            <span class="material-icons" (click)="owlCar.next()"
+                style="font-size: 60px; transform: rotate(-90deg); color: white;">arrow_circle_down</span>
+            <span style="flex:1"></span>
+        </div>
+        <!-- Buttons -->
 
     </div>
 </div>
