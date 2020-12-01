@@ -1,15 +1,19 @@
 <div class="parent-element-to-video">
 
-    <div class="overlay-filter" style="transition: 1s;" id="bg"></div>
-    <!-- <video playsinline autoplay loop poster="../../assets/homePageImage.jpg" id="vid" muted="muted" preload="auto"
-        type="video/mp4" type="">
-        <source src="../../assets/homePageVideo3.webm" type="video/webm">
-    </video> -->
+    <div class="right-text">
+        <h1 id="rightText" [ngStyle]="{'font-size':getFontSize()}">
+        </h1>
+    </div>
+
+    <div class="overlay-filter" style="transition: 1s;" id="bg" [ngStyle]="{'background-image':gradVar}">
+        <!-- <div class="gradient"></div> -->
+    </div>
+
     <video style="background-color: rgb(0, 0, 0);" poster="../../assets/homePageImage.jpg" id="vid" muted="muted"
         preload="auto" autoplay="true" src="../../assets/homePageVideo3.webm" muted="muted"></video>
 
 </div>
 <!-- section 2 -->
-<div style="height: 100vh;" class="section">
-
-</div>
+<app-section-two></app-section-two>
+<!-- section 3 -->
+<app-section-three></app-section-three>

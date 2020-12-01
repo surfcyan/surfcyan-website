@@ -1,0 +1,44 @@
+<div style="height: 100vh;" class="default-bg">
+    <div style="height: 100%;">
+
+        <div id="slider">
+            <figure style="position: relative;">
+                <div style="background-color: red; position: absolute; top: 0;" [ngStyle]="{'left':redPos}" id="red">
+
+                </div>
+                <div style="background-color: green;">
+
+                </div>
+                <div style="background-color: purple; position: absolute; top: 0;" [ngStyle]="{'right':purplePos}" id="purple">
+
+                </div>
+
+                <div class="leftBtn">
+                    <span style="flex: 1;"></span>
+                    <button (click)="left()">Left</button>
+                    <span style="flex: 1;"></span>
+                </div>
+                <div class="rightBtn">
+                    <span style="flex: 1;"></span>
+                    <button (click)="right()">Right</button>
+                    <span style="flex: 1;"></span>
+                </div>
+
+            </figure>
+        </div>
+
+    </div>
+</div>
+
+<!-- <p>
+    Apart from:
+    - Website and Content Creation
+
+    Our services also include:
+    - Generating Content for Blogs and Ad Copies
+    - Voiceovers
+    - Social Media
+    - Curating Pitches & Proposals
+    - Creating Presentations
+    - Strategizing Marketing Campaigns for Brands and Events
+</p> -->
