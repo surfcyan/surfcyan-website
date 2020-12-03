@@ -16,7 +16,8 @@ export class HomeComponent implements OnInit {
 
     // var percent = (scrollY/screenHeight)*100
     var percent = (scrollY / screenHeight) * 1000
-    this.gradVar = `linear-gradient(180deg, transparent ${100 - percent}%,#0092a4)`
+    // this.gradVar = `linear-gradient(180deg, transparent ${100 - percent}%,#0092a4)`
+    this.gradVar = `linear-gradient(180deg, transparent ${100 - percent}%,${this.bgColor})`
     if (scrollY > 3) {
       document.getElementById("bg").style.backgroundColor = 'rgb(0 146 164 / 35%)'
     }

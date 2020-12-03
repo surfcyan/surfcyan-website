@@ -10,6 +10,7 @@ import { SectionTwoComponent } from './home/section-two/section-two.component';
 import { SectionThreeComponent } from './home/section-three/section-three.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     HomeComponent,
     SectionTwoComponent,
-    SectionThreeComponent
+    SectionThreeComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
