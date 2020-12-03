@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -12,6 +12,8 @@ export class SectionThreeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  @Input() bgColor;
 
   customOptions: OwlOptions = {
     loop: true,
@@ -35,7 +37,7 @@ export class SectionThreeComponent implements OnInit {
         items: 1
       }
     },
-    nav: true
+    nav: false
   }
 
   carouselData = [

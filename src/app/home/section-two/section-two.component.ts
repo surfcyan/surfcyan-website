@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-section-two',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./section-two.component.scss']
 })
 export class SectionTwoComponent implements OnInit {
+
+  @Input() bgColor;
 
   constructor() { }
 

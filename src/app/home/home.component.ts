@@ -8,6 +8,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   gradVar;
+  bgColor = '#0092a4';
 
   @HostListener('window:scroll', ['$event']) private onScroll($event: Event): void {
     var scrollY = $event['target']['defaultView']['scrollY']
@@ -16,6 +17,20 @@ export class HomeComponent implements OnInit {
     // var percent = (scrollY/screenHeight)*100
     var percent = (scrollY / screenHeight) * 1000
     this.gradVar = `linear-gradient(180deg, transparent ${100 - percent}%,#0092a4)`
+    if (scrollY > 3) {
+      document.getElementById("bg").style.backgroundColor = 'rgb(0 146 164 / 35%)'
+    }
+    else {
+      document.getElementById("bg").style.backgroundColor = '#000000a3'
+    }
+
+    if (scrollY > screenHeight) {
+      this.bgColor = '#000';
+    }
+    else {
+      this.bgColor = '#0092a4';
+    }
+
   };
 
   constructor() {
@@ -28,7 +43,7 @@ export class HomeComponent implements OnInit {
   //   '4em','5em','3.2em','3em','4em','5em','3.5em','7em'
   // ]
   fontSizeArr = [
-    '6.5rem','7.5rem','5.7em','5.5rem','6.5rem','7.5rem','6rem','9.5rem'
+    '6.5rem', '7.5rem', '5.7em', '5.5rem', '6.5rem', '7.5rem', '6rem', '9.5rem'
   ]
 
   ngOnInit(): void {

@@ -1,4 +1,4 @@
-<div style="height: 100vh;" class="default-bg">
+<div style="height: 100vh; transition: 1s;" class="default-bg" [ngStyle]="{'background-color':bgColor}">
     <div style="height: fit-content; position: relative;">
 
         <owl-carousel-o [options]="customOptions" #owlCar>
@@ -30,7 +30,7 @@
                     <!--content here-->
                     <div class="col-flex">
                         <span></span>
-                        <h1>Mobile Application</h1>
+                        <h1>Mobile Applications</h1>
                         <span></span>
                     </div>
                     <span style="flex: 1;"></span>
@@ -58,7 +58,7 @@
                     <!--content here-->
                     <div class="col-flex">
                         <span></span>
-                        <h1>Logo & Graphics</h1>
+                        <h1>Logos & Graphics</h1>
                         <span></span>
                     </div>
                     <span style="flex: 1;"></span>
@@ -72,7 +72,7 @@
                     <!--content here-->
                     <div class="col-flex">
                         <span></span>
-                        <h1>Youtube Branding Videos</h1>
+                        <h1>Branding Videos</h1>
                         <span></span>
                     </div>
                     <span style="flex: 1;"></span>
@@ -87,7 +87,7 @@
                     <!--content here-->
                     <div class="col-flex">
                         <span></span>
-                        <h1>Voiceovers</h1>
+                        <h1>Voice-overs</h1>
                         <span></span>
                     </div>
                     <span style="flex: 1;"></span>
@@ -130,17 +130,17 @@
         </owl-carousel-o>
 
         <!-- Buttons -->
-        <div class="col-flex c-buttons" style="left: 0;">
+        <div class="col-flex c-buttons" style="left: 0;" (click)="owlCar.prev()">
             <span style="flex:1"></span>
-            <span class="material-icons" (click)="owlCar.prev()"
-                style="font-size: 60px; transform: rotate(90deg); color: white;">arrow_circle_down</span>
+            <span class="material-icons"
+                style="font-size: 60px; color: white;">keyboard_arrow_left</span>
             <span style="flex:1"></span>
         </div>
 
-        <div class="col-flex c-buttons" style="right: 0;">
+        <div class="col-flex c-buttons" style="right: 0;" (click)="owlCar.next()">
             <span style="flex:1"></span>
-            <span class="material-icons" (click)="owlCar.next()"
-                style="font-size: 60px; transform: rotate(-90deg); color: white;">arrow_circle_down</span>
+            <span class="material-icons"
+                style="font-size: 60px; color: white;">keyboard_arrow_right</span>
             <span style="flex:1"></span>
         </div>
         <!-- Buttons -->
