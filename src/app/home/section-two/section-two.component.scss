@@ -3,3 +3,16 @@ p {
     font-size: 38px;
     font-weight: 100;
 }
+@media only screen and (max-width: 1000px) {
+    p {
+        font-size: 30px;
+    }
+    img{
+        margin: 0!important;
+    }
+}
+@media only screen and (max-width: 500px) {
+    p {
+        font-size: 24px;
+    }
+}

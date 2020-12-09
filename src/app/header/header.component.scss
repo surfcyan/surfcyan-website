@@ -1,6 +1,36 @@
-#headerButtons div{
+#headerButtons div {
     padding: 24px;
     font-weight: bold;
     font-size: 18px;
     height: fit-content;
+}
+.icon {
+    width: 200px;
+    margin: 24px 36px;
+}
+@media only screen and (max-width: 800px) {
+    .icon {
+        width: 180px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .icon {
+        width: 180px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .icon {
+        width: 160px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .icon {
+        width: 135px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .icon {
+        width: 105px;
+        margin: 18px 20px;
+    }
 }

@@ -41,10 +41,10 @@ export class HomeComponent implements OnInit {
   audioPlayer: HTMLMediaElement
   n = 0;
   // fontSizeArr = [
-  //   '4em','5em','3.2em','3em','4em','5em','3.5em','7em'
+  //   '6.5rem', '7.5rem', '5.7em', '5.5rem', '6.5rem', '7.5rem', '6rem', '9.5rem'
   // ]
-  fontSizeArr = [
-    '6.5rem', '7.5rem', '5.7em', '5.5rem', '6.5rem', '7.5rem', '6rem', '9.5rem'
+  fontSizeClassArr = [
+    'classOne', 'classTwo', 'classThree', 'classFour', 'classFive', 'classSix', 'classSeven', 'classEight'
   ]
 
   ngOnInit(): void {
@@ -76,8 +76,14 @@ export class HomeComponent implements OnInit {
 
   }
 
-  getFontSize() {
-    return this.fontSizeArr[this.n];
+  // getFontSize() {
+  //   return this.fontSizeArr[this.n];
+  // }
+
+  getFontClass() {
+    return this.fontSizeClassArr[this.n];
   }
+
+  x = 'classEight'
 
 }

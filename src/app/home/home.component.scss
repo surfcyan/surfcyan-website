@@ -41,9 +41,198 @@ video {
     white-space: pre;
     text-align: right;
 }
-.right-text h1{
+.right-text h1 {
     margin: 0 12px 0 0;
 }
-h1{
+h1 {
     font-weight: bold;
+}
+
+/* Normal Desktop */
+.classOne {
+    font-size: 6.5rem !important;
+}
+.classTwo {
+    font-size: 7.5rem !important;
+}
+.classThree {
+    font-size: 5.7em !important;
+}
+.classFour {
+    font-size: 5.5rem !important;
+}
+.classFive {
+    font-size: 6.5rem !important;
+}
+.classSix {
+    font-size: 7.5rem !important;
+}
+.classSeven {
+    font-size: 6rem !important;
+}
+.classEight {
+    font-size: 9.5rem !important;
+}
+
+@media only screen and(max-width:1000px) {
+    .classOne {
+        font-size: 5.5rem !important;
+    }
+    .classTwo {
+        font-size: 6.5rem !important;
+    }
+    .classThree {
+        font-size: 4.7em !important;
+    }
+    .classFour {
+        font-size: 4.5rem !important;
+    }
+    .classFive {
+        font-size: 5.5rem !important;
+    }
+    .classSix {
+        font-size: 6.5rem !important;
+    }
+    .classSeven {
+        font-size: 5rem !important;
+    }
+    .classEight {
+        font-size: 8.5rem !important;
+    }
+}
+
+@media only screen and(max-width:850px) {
+    .classOne {
+        font-size: 4.5rem !important;
+    }
+    .classTwo {
+        font-size: 5.5rem !important;
+    }
+    .classThree {
+        font-size: 3.7em !important;
+    }
+    .classFour {
+        font-size: 3.5rem !important;
+    }
+    .classFive {
+        font-size: 4.5rem !important;
+    }
+    .classSix {
+        font-size: 5.5rem !important;
+    }
+    .classSeven {
+        font-size: 4rem !important;
+    }
+    .classEight {
+        font-size: 7.5rem !important;
+    }
+}
+
+@media only screen and(max-width:850px) {
+    .classOne {
+        font-size: 4.5rem !important;
+    }
+    .classTwo {
+        font-size: 5.5rem !important;
+    }
+    .classThree {
+        font-size: 3.7em !important;
+    }
+    .classFour {
+        font-size: 3.5rem !important;
+    }
+    .classFive {
+        font-size: 4.5rem !important;
+    }
+    .classSix {
+        font-size: 5.5rem !important;
+    }
+    .classSeven {
+        font-size: 4rem !important;
+    }
+    .classEight {
+        font-size: 7.5rem !important;
+    }
+}
+
+@media only screen and(max-width:700px) {
+    .classOne {
+        font-size: 3.5rem !important;
+    }
+    .classTwo {
+        font-size: 4.5rem !important;
+    }
+    .classThree {
+        font-size: 2.7em !important;
+    }
+    .classFour {
+        font-size: 2.5rem !important;
+    }
+    .classFive {
+        font-size: 3.5rem !important;
+    }
+    .classSix {
+        font-size: 4.5rem !important;
+    }
+    .classSeven {
+        font-size: 3rem !important;
+    }
+    .classEight {
+        font-size: 6.5rem !important;
+    }
+}
+@media only screen and(max-width:550px) {
+    .classOne {
+        font-size: 2.5rem !important;
+    }
+    .classTwo {
+        font-size: 3.5rem !important;
+    }
+    .classThree {
+        font-size: 1.7em !important;
+    }
+    .classFour {
+        font-size: 1.5rem !important;
+    }
+    .classFive {
+        font-size: 2.5rem !important;
+    }
+    .classSix {
+        font-size: 3.5rem !important;
+    }
+    .classSeven {
+        font-size: 2rem !important;
+    }
+    .classEight {
+        font-size: 5.5rem !important;
+    }
+}
+@media only screen and(max-width:400px) {
+    .classOne {
+        font-size: 2.5rem !important;
+    }
+    .classTwo {
+        font-size: 3.5rem !important;
+    }
+    .classThree {
+        font-size: 1.7em !important;
+    }
+    .classFour {
+        font-size: 1.5rem !important;
+    }
+    .classFive {
+        font-size: 2.5rem !important;
+    }
+    .classSix {
+        font-size: 3.5rem !important;
+    }
+    .classSeven {
+        font-size: 2rem !important;
+    }
+    .classEight {
+        font-size: 5.5rem !important;
+    }
+    .right-text {
+        white-space: inherit;
+    }
 }
