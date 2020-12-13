@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -34,7 +35,7 @@ export class HomeComponent implements OnInit {
 
   };
 
-  constructor() {
+  constructor(private router: Router) {
 
   }
 
@@ -67,7 +68,12 @@ export class HomeComponent implements OnInit {
 
     document.getElementById("rightText").innerHTML = textArr[this.n];
 
-    setInterval(() => {
+    var refreshId = setInterval(() => {
+
+      if (this.router.url != '/') {
+        clearInterval(refreshId);
+      }
+
       this.n += 1;
       if (this.n > 7)
         this.n = 0
