@@ -11,7 +11,12 @@ import { SectionThreeComponent } from './home/section-three/section-three.compon
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { ReactiveFormsModule, FormsModule } from '@angular/forms'
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { FireServiceService } from './services/fire-service.service';
 
 @NgModule({
   declarations: [
@@ -30,8 +35,13 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms'
     BrowserAnimationsModule,
     ReactiveFormsModule,
     FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAnalyticsModule,
+    AngularFireDatabaseModule,
   ],
-  providers: [],
+  providers: [
+    FireServiceService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

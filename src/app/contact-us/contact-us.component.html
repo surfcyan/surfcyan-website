@@ -5,27 +5,28 @@
         <span style="flex: 1;"></span>
         <div class="formBg">
 
-            <p>Fill Your Details Below to get call from our team</p>
+            <p style="font-weight: bold;">Fill Your Details Below to get call from our team</p>
             <br>
 
             <form (ngSubmit)="submit()" [formGroup]="form">
 
                 <div class="mb-3">
                     <label for="name" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="name">
+                    <input type="text" class="form-control" id="name" formControlName="name">
                 </div>
 
                 <div class="mb-3">
                     <label for="email" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="email">
+                    <input type="email" class="form-control" id="email" formControlName="email">
                 </div>
 
                 <div class="mb-3">
                     <label for="phone" class="form-label">Phone Number</label>
-                    <input type="tel" class="form-control" id="phone">
+                    <input type="tel" class="form-control" id="phone" formControlName="phone">
                 </div>
 
-                <br>
+                <p style="text-align: center;" id="message">{{message}}</p>
+
 
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>

@@ -45,3 +45,55 @@
         background-color: whitesmoke;
     }
 }
+
+.wiggle {
+    position: relative;
+    transition: 0.2s;
+    animation: wiggleAnim 0.5s forwards;
+}
+@keyframes wiggleAnim {
+    0% {
+        left: 0px;
+        right: 0px;
+    }
+    10% {
+        left: -5px;
+        right: 0px;
+    }
+    20% {
+        left: 0px;
+        right: -5px;
+    }
+    30% {
+        left: -5px;
+        right: 0px;
+    }
+    40% {
+        left: 0px;
+        right: -5px;
+    }
+    50% {
+        left: -5px;
+        right: 0px;
+    }
+    60% {
+        left: 0px;
+        right: -5px;
+    }
+    70% {
+        left: -5px;
+        right: 0px;
+    }
+    80% {
+        left: 0px;
+        right: -5px;
+    }
+    90% {
+        left: -5px;
+        right: 0px;
+    }
+    100% {
+        left: 0px;
+        right: 0px;
+    }
+}

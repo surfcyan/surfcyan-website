@@ -123,6 +123,10 @@
               "devServerTarget": "surfCyan:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }
