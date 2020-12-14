@@ -12,7 +12,18 @@
 
 <img src="../../assets/SVG/Asset 1@2x.png" alt="Img" routerLink="" class="icon">
 
-<div style=" position: absolute; top: 24px; right: 24px;">
-    <span style="color: white; font-weight: bold; font-size: 20px; margin: 0 24px; cursor: pointer;" routerLink="">Home</span>
-    <span style="color: white; font-weight: bold; font-size: 20px; margin: 0 24px; cursor: pointer;" routerLink="contact">Contact</span>
+<div class="dsk" style="position: absolute; top: 24px; right: 24px;">
+    <span style="color: white; font-weight: bold; font-size: 20px; margin: 0 24px; cursor: pointer;"
+        routerLink="">Home</span>
+    <span style="color: white; font-weight: bold; font-size: 20px; margin: 0 24px; cursor: pointer;"
+        routerLink="contact">Contact</span>
+</div>
+
+<div class="mb" style="position: absolute; top: 24px; right: 24px;">
+    <button mat-fab color="primary">
+        <!-- <span class="material-icons" style="color:white; font-size:38px; transition: 0.5s;" (click)="openMenu()"
+            id="menu">{{btn}}</span> -->
+        <mat-icon style="color:white; transition: 0.5s;" (click)="openMenu()" id="menu">{{btn}}
+        </mat-icon>
+    </button>
 </div>

@@ -18,6 +18,8 @@ import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { FireServiceService } from './services/fire-service.service';
 
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +40,8 @@ import { FireServiceService } from './services/fire-service.service';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAnalyticsModule,
     AngularFireDatabaseModule,
+    MatButtonModule,
+    MatIconModule,
   ],
   providers: [
     FireServiceService,

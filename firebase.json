@@ -1,20 +1,6 @@
 {
   "hosting": [
     {
-      "public": "dist/surfCyan",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
-      "rewrites": [
-        {
-          "source": "**",
-          "destination": "/index.html"
-        }
-      ]
-    },
-    {
       "target": "surfCyan",
       "public": "dist/surfCyan",
       "ignore": [
