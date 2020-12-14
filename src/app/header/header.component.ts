@@ -14,13 +14,19 @@ export class HeaderComponent implements OnInit {
 
   btn = 'menu';
   openMenu() {
-    if(this.btn=='menu'){
+    if (this.btn == 'menu') {
       this.btn = 'clear';
-      document.getElementById("menu").style.transform = 'rotate(180deg)';
+      document.getElementById("menuBtn").style.transform = 'rotate(180deg)';
+
+      document.getElementById("menu").style.visibility = 'visible'
+      document.getElementById("menu").style.opacity = "1"
     }
-    else{
+    else {
       this.btn = 'menu'
-      document.getElementById("menu").style.transform = 'rotate(-180deg)';
+      document.getElementById("menuBtn").style.transform = 'rotate(-180deg)';
+
+      document.getElementById("menu").style.opacity = "0"
+      document.getElementById("menu").style.visibility = 'hidden'
     }
   }
 

@@ -1,16 +1,4 @@
-<!-- <div style="width: 100%; display: flex; color: white;">
-    <div style="margin-left: 48px; padding-top: 36px;">
-        <img src="../../assets/SVG/Asset 1@2x.png" alt="Img" style="width: 200px; padding: 12px;" routerLink="">
-    </div>
-    <span style="flex: 1;"></span>
-    <div style="display: flex;" id="headerButtons">
-        <div>
-            Home
-        </div>
-    </div>
-</div> -->
-
-<img src="../../assets/SVG/Asset 1@2x.png" alt="Img" routerLink="" class="icon">
+<img src="../../assets/SVG/Asset 1@2x.png" alt="Img" routerLink="" class="icon" routerLink="">
 
 <div class="dsk" style="position: absolute; top: 24px; right: 24px;">
     <span style="color: white; font-weight: bold; font-size: 20px; margin: 0 24px; cursor: pointer;"
@@ -19,11 +7,22 @@
         routerLink="contact">Contact</span>
 </div>
 
-<div class="mb" style="position: absolute; top: 24px; right: 24px;">
-    <button mat-fab color="primary">
+<div class="mb" style="position: absolute; top: 24px; right: 24px; z-index: 2;">
+    <button mat-fab style="background-color: #07c7e0;">
         <!-- <span class="material-icons" style="color:white; font-size:38px; transition: 0.5s;" (click)="openMenu()"
             id="menu">{{btn}}</span> -->
-        <mat-icon style="color:white; transition: 0.5s;" (click)="openMenu()" id="menu">{{btn}}
+        <mat-icon style="color:white; transition: 0.5s; font-weight: bold;" (click)="openMenu()" id="menuBtn">{{btn}}
         </mat-icon>
     </button>
+</div>
+
+<div id="menu">
+    <span style="flex: 1;"></span>
+    <div>
+        <ul (click)="openMenu()">
+            <li routerLink="">HOME</li>
+            <li routerLink="contact">CONTACT</li>
+        </ul>
+    </div>
+    <span style="flex: 1;"></span>
 </div>

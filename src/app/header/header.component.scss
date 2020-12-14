@@ -8,6 +8,36 @@
     width: 200px;
     margin: 24px 36px;
 }
+#menu {
+    width: 100vw;
+    height: 100vh;
+    background-color: #012828;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+    transition: 0.4s;
+    opacity: 0;
+}
+li {
+    color: white;
+    list-style: none;
+    padding: 12px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+li:hover {
+    background-color: white;
+    color: #012828;
+}
+ul {
+    padding: 0;
+}
+
 @media only screen and (max-width: 800px) {
     .icon {
         width: 180px;

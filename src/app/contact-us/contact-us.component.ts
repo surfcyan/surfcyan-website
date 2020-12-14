@@ -25,7 +25,7 @@ export class ContactUsComponent implements OnInit {
   submit() {
 
     if (this.form.get('name').value == '') {
-      this.message = 'Please fill all details!'
+      this.message = 'Please fill all the details!'
       this.wiggle()
       return 0
     }
@@ -41,7 +41,7 @@ export class ContactUsComponent implements OnInit {
     this.fService.postContactUs(obj).then(res => {
       this.message = 'Thank You, We will contact you soon!'
     }).catch(err => {
-      this.message = 'Sorry, Retry again!'
+      this.message = 'Uh Snap! Please try again.'
       this.wiggle();
       console.log(err)
     })
